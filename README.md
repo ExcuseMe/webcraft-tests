@@ -15,7 +15,7 @@ How to launch:
 3. Configure bots (if necessary):
 - edit `src/constant.ts`
 - edit bot spawning code in `Test.start` in `src/index.ts`
-- edit bot movement code in `BotPlayer.start` in `src/bot_player.ts`
+- edit bot movement code in `BotPlayer.tick` in `src/bot_player.ts`
 
 4. Run
 ```
