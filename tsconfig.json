@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "noEmitOnError": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "removeComments": false,
+        "sourceMap": false,
+        "strict": false,
+        "inlineSourceMap": true,
+
+        "target": "es2022",
+        "module": "nodenext",
+        "ignoreDeprecations": "5.0",
+        "moduleResolution": "nodenext",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./js",
+        "baseUrl": "./" ,
+        "paths": {
+            "@sciner/pixi": ["../tesera/www/node_modules/@sciner/dist/sciner-pixi.mjs"],
+            "@client/*": ["../tesera/www/src/*"],
+            "@vendors/*": ["../tesera/www/vendors/*"],
+            "@world/*": ["../tesera/world_server/*"]
+        },
+        "skipLibCheck": true
+    },
+    "include": [
+        "./**/*.ts"
+    ],
+    "exclude": [
+    ],
+    // other settings...
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node",
+        "swc": true
+    }
+}

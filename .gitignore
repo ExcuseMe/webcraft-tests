@@ -3,6 +3,7 @@
 .idea/
 .vs/
 .vscode/
+js/
 *.sqlite3
 *.BASE.*
 *.LOCAL.*

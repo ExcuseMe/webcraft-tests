@@ -2,11 +2,26 @@
   "name": "test",
   "version": "1.0.0",
   "scripts": {
-    "start": "node --experimental-json-modules --no-warnings ./index.js"
+    "watch": "tsc -w -p tsconfig.json",
+    "build": "tsc -p www/tsconfig.json",
+    "start": "node --enable-source-maps --import @sciner/ts-build src/index.ts"
   },
   "type": "module",
   "dependencies": {
+    "@sciner/effekseer": "=1.0.1",
+    "@sciner/pixi": "=0.4.10",
+    "@swc/core": "^1.13.5",
+    "agora-rtc-sdk-ng": "^4.22.1",
+    "fast-glob": "^3.3.2",
+    "konva": "^9.3.14",
     "node-fetch": "^3.2.9",
+    "pako": "=2.1.0",
     "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "@sciner/ts-build": "=1.0.7",
+    "@types/howler": "^2.2.12",
+    "copyfiles": "=2.4.1",
+    "npm-run-all": "^4.1.5"
   }
 }
